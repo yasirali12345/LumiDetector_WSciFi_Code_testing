@@ -21,7 +21,7 @@
       <position   x="0" y="0" z="LumiDirect_Z-LumiDirect_DZ/2" />
       <rotation x="Lumi_rotateX_angle" y="Lumi_rotateY_angle" z="Lumi_rotateZ_angle"/>
       <dimensions x="LumiDirectPCAL_width" z="LumiDirectPCAL_length"/>
-      <module sizex="200*mm" sizey="200*mm" sizez="400*mm" material="TungstenDens24" vis="EcalVis">
+      <module sizex="240*mm" sizey="240*mm" sizez="480*mm" material="TungstenDens24" vis="EcalVis">
         <fiber material="Polystyrene"
           radius="LumiDirectPCAL_FiberRadius"
           offset="LumiDirectPCAL_FiberOffset"
@@ -33,8 +33,9 @@
 
   <readouts>
     <readout name="LumiDirectPCALHits">
-      <segmentation type="CartesianGridXYZ" grid_size_x="1*mm" grid_size_y="1*mm" grid_size_z="1*mm"/>
-      <id>system:8,module:8,fiber_x:16:-16,fiber_y:-16,fiber_z:-16</id> 
+       <segmentation type="CartesianGridXYZ" grid_size_x="1*mm" grid_size_y="1*mm" grid_size_z="1*mm"/>        
+      <id>system:8,module:8,x:16:16,y:32:-16,z:-16</id>
+ 
     </readout>
   </readouts>
 

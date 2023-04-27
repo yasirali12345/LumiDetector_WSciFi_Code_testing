@@ -75,7 +75,7 @@ static Ref_t create_detector(Detector& desc, xml_h handle, SensitiveDetector sen
 
     // place the fibers
     double y0      = (foff + fside);
-    int    nfibers = 0;
+    //int    nfibers = 0;
     for (int iy = 0; iy < ny; ++iy) {
       double y = y0 + fdisty * iy;
       // about to touch the boundary
@@ -89,10 +89,10 @@ static Ref_t create_detector(Detector& desc, xml_h handle, SensitiveDetector sen
         if ((sx - x) < x0) {
           break;
         }
-        auto fiberPV = modVol.placeVolume(fiberVol, nfibers++, Position{x - sx / 2., y - sy / 2., 0});
-        fiberPV.addPhysVolID("fiber_x", ix + 1).addPhysVolID("fiber_y", iy + 1);
-         std::cout << "ix: " << ix << " iy " << iy << 
-         std::endl;
+       // auto fiberPV = modVol.placeVolume(fiberVol, nfibers++, Position{x - sx / 2., y - sy / 2., 0});
+       // fiberPV.addPhysVolID("fiber_x", ix + 1).addPhysVolID("fiber_y", iy + 1);
+         //std::cout << "ix: " << ix << " iy " << iy << 
+         //std::endl;
       }
     }
     // if no fibers we make the module itself sensitive
