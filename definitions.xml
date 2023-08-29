@@ -296,7 +296,7 @@
     <constant name="LumiDirect_Z"         value="-66*m"/>
     <constant name="LumiDirect_XY"        value="0.24*m"/>
     <constant name="LumiDirect_DZ"        value="0.48*m"/>
-    <constant name="Lumi_rotateX_angle" value="286.0*degree"/>
+    <constant name="Lumi_rotateX_angle" value="5.0*degree"/>
     <constant name="Lumi_rotateY_angle" value="0.0* degree"/>
     <constant name="Lumi_rotateZ_angle" value="0.0* degree"/>
     <constant name="LumiDirectPCAL_width"         value="30.0 * cm"/>
