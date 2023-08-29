@@ -1,16 +1,16 @@
 <!-- Copyright (C) 2023 Yasir Ali -->
 <lccdd>
   <comment>
-    //////////////////////////////////////////////////
+    //////////////////////////////////////////////////  
     // LumiDirectPhoton-Calorimeter
     //////////////////////////////////////////////////
   </comment>
-
+ 
   <define>
     <constant name="LumiDirectPCAL_FiberRadius" value="0.5*mm"/>
     <constant name="LumiDirectPCAL_FiberOffset" value="3*mm"/>
-    <constant name="LumiDirectPCAL_FiberSpaceX" value="0.265*mm"/>
-    <constant name="LumiDirectPCAL_FiberSpaceY" value="0.425*mm"/>
+    <constant name="LumiDirectPCAL_FiberSpaceX" value="0.0*mm"/> 
+    <constant name="LumiDirectPCAL_FiberSpaceY" value="0.0*mm"/>
   </define>
 
   <detectors>
@@ -22,8 +22,8 @@
       <position   x="0" y="0" z="LumiDirect_Z-LumiDirect_DZ/2" />
       <rotation x="Lumi_rotateX_angle" y="Lumi_rotateY_angle" z="Lumi_rotateZ_angle"/>
       <dimensions x="LumiDirectPCAL_width" z="LumiDirectPCAL_length"/>
-      <module sizex="200*mm" sizey="200*mm" sizez="400*mm" material="TungstenDens24" vis="EcalVis">
-        <fiber material="Polystyrene"
+      <module sizex="240*mm" sizey="240*mm" sizez="480*mm" material="TungstenDens24" vis="EcalVis">
+        <fiber material="Quartz"
           radius="LumiDirectPCAL_FiberRadius"
           offset="LumiDirectPCAL_FiberOffset"
           spacex="LumiDirectPCAL_FiberSpaceX"
@@ -40,3 +40,6 @@
   </readouts>
 
 </lccdd>
+
+    
+   

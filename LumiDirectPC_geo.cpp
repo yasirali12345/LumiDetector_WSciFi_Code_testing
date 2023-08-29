@@ -36,12 +36,12 @@ static Ref_t create_detector(Detector& desc, xml_h handle, SensitiveDetector sen
 
   // envelope
   Box    box(width , width , length );
-  Volume vol(detName + "_vol", box, desc.material("Air"));
+  Volume vol(detName + "_vol", box, desc.material("Air")); 
   vol.setVisAttributes(desc.visAttributes(detElem.visStr()));
 
   // build module
   xml_comp_t mod_x = detElem.child(_Unicode(module));
-  auto       sx    = mod_x.attr<double>(_Unicode(sizex));
+  auto       sx    = mod_x.attr<double>(_Unicode(sizex)); 
   auto       sy    = mod_x.attr<double>(_Unicode(sizey));
   auto       sz    = mod_x.attr<double>(_Unicode(sizez));
 
